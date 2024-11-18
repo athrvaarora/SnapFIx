@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown-content {
+  /* Code block styles */
+  pre code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    tab-size: 2;
+  }
+
+  /* Line number styles */
+  pre code .line-number {
+    margin-right: 1em;
+    color: #6b7280;
+    user-select: none;
+  }
+
+  /* Code block syntax highlighting */
+  pre code.language-python,
+  pre code.language-javascript,
+  pre code.language-typescript,
+  pre code.language-jsx,
+  pre code.language-tsx {
+    color: #d4d4d4;
+    background-color: #1e1e1e;
+  }
+
+  /* Keywords */
+  pre code .keyword {
+    color: #569cd6;
+  }
+
+  /* Strings */
+  pre code .string {
+    color: #ce9178;
+  }
+
+  /* Comments */
+  pre code .comment {
+    color: #6a9955;
+  }
+
+  /* Numbers */
+  pre code .number {
+    color: #b5cea8;
+  }
+
+  /* Function names */
+  pre code .function {
+    color: #dcdcaa;
+  }
+}
+
+/* Scrollbar styles for code blocks */
+pre code::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+pre code::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+
+pre code::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+pre code::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
