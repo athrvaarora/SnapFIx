@@ -529,7 +529,7 @@ def create_system_tray(analyzer):
 
 def main():
     # Replace with your actual OpenAI API key
-    api_key = "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"
+    api_key = OPENAI_API_KEY_HERE
 
     try:
         analyzer = ScreenshotAnalyzer(api_key)
